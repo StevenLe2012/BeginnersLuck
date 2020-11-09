@@ -51,10 +51,6 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/about_us", (req, res) => {
-  res.render("about_us");
-});
-
 
 app.get("/die_roller", (request, response) => {
   response.render("die_roller");
