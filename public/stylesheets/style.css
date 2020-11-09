@@ -1,0 +1,123 @@
+body {
+  padding: 60px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("https://cdn.discordapp.com/attachments/744247887705407512/774651878222463036/codestellation_forweb.png");
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+
+h1 {
+  font-size: 3.25em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.76em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.15em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+a {
+  color: #00B7FF;
+}
+
+li {
+  font-size: 1em;
+}
+
+strong {
+  font-size: 1.76em;
+}
+
+.button {
+  font: 16px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+.parent > .child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.jumbotron {
+  background-color: #E2E2E2;
+}
+
+.smaller {
+  font-size: .85em;
+}
+
+.gradient {
+    background: linear-gradient(to bottom, #ff4719 0%, #ed5a5a 77%);
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+}
+
+.white {
+  color: #E2E2E2
+}
+
+img {  display: block; } 
+
+img.wrap {  max-width: 70%;  margin: 0px 0px; }  
+
+img.align-right {  float: right;  margin-left: 30px; }  
+
+img.align-left {  float: left;  margin-right: 30px; } 
+
+.fancy {
+  color: #ff0000;
+  border: none;
+  text-align: center;
+  font-size: 27px;
+  margin: 4px 2px;
+  opacity: 0.9;
+  transition: 0.4s;
+}
+.fancy:hover {font-size: 34px; opacity: 1; color: #ff0000}
+
+.fancyImage {
+  opacity: 1;
+  transition: 0.2s;
+}
+.fancyImage:hover {opacity: .85; transform: rotate(15deg)}
+
+.textcolor {
+  background-color: #ed5a5a;
+}
+
+.textcolor2{
+  background-color: #DB7093;
+}
+
+.buttoncolor {
+  background-color: #FFC0CB;
+}
+

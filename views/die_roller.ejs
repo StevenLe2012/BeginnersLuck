@@ -1,0 +1,67 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+  <div class="jumbotron">
+     <h1>Die Roller</h1>
+     <h3>Spin a die and get any number from 1-6!</h3>
+     <h3>Examples of how to use the Die Roller </h3>
+      <h4>
+        <ul>
+          <li>Monopoly - Roll the virtual die twice to get the position you should move in your game of Monopoly.</li>
+          <li>Betting - Guess a number with your friend (or well I guess friendemy) and whoever gets the number closest wins!</li>
+          <li>Yes, No Machine - If the number is 3 or below, then the decision you make is a "No." If the number is 4 or above, then  the decision you make is a "Yes."</li>
+          <li>Be Creative - There is no right or wrong way to use this app. It is up to your imagination and creativity to make the most of it.</li>
+          <br>
+          <p>Remember - HAVE FUN!</p>
+        </ul> 
+      </h4>
+  </div>
+
+<h3 class="white">
+  Press the button to roll the die!
+</h3>
+<br>
+
+  
+<button id="diceThrow" onclick="diceRoll(); buttonDisabler()">Roll the die</button>
+<div id='diceImageBox'></div>
+<h1 id='diceResult' style="width=1000px" class='white'></h1>
+
+
+
+
+<script>
+  
+function diceRoll(){
+  let newDiv = document.createElement('div');
+  let diceImage = document.createElement('img');
+  let divDiceRoll = document.getElementById('diceImageBox');
+  diceImage.src = "https://media.tenor.com/images/3a68cf06af1b5fe872e17928290ab788/tenor.gif";
+  divDiceRoll.appendChild(diceImage);
+  setTimeout(revertDice, 2000);
+}
+  
+  
+var count = 0;
+function buttonDisabler(){
+  count++;
+  console.log(count);
+  if (count>0){
+    document.getElementById("diceThrow").disabled = true;
+}
+}
+
+  
+function revertDice(){
+  document.getElementById("diceThrow").disabled = false;
+  document.getElementById("diceImageBox").remove();
+  document.getElementById("diceResult").textContent=getRandomInt().toString()
+}
+
+function getRandomInt(){
+  return Math.floor(Math.random() * (6)) + 1;
+}
+
+</script>
+
+
+<%- include('bootfooter') -%>
